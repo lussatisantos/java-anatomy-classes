@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Excpetion {
     public static void main(String[] args) throws Exception {
+
+try {
         Scanner scanner = new Scanner(System.in).useLocale(Locale.UK);
 
             int agencyNumber;
@@ -27,7 +29,11 @@ public class Excpetion {
             System.out.println("Current Balance: " + balance);
 
             System.out.print("Hello " + clientName + " welcome in our bank, your balance " + balance + " is now available");
-
+         
             scanner.close();
         }
+            catch (java.util.InputMismatchException e) { 
+                System.err.println("Error: Input invalid try again later");
+        }
+    }
 }
