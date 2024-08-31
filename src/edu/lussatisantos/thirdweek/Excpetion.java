@@ -33,7 +33,7 @@ try {
             scanner.close();
         }
             catch (java.util.InputMismatchException e) { 
-                System.err.println("Error: Input invalid try again later");
+                System.out.println("Error: Input invalid try again later");
         }
     }
 }
